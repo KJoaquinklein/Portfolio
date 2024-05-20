@@ -21,8 +21,27 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="space-x-4">
                     <a
+                        href="#proyect"
+                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                    >
+                        Proyectos
+                    </a>
+                    <a
+                        href="#technologies"
+                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                    >
+                        Tecnologías
+                    </a>
+                    <a
+                        href="#contact"
+                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                    >
+                        Contacto
+                    </a>
+
+                    {/* <a
                         href="#proyect"
                         className="relative inline-flex min-h-[32px] min-w-[81px] overflow-hidden p-[2px]"
                     >
@@ -48,7 +67,7 @@ const Home = () => {
                         <span className="inline-flex  cursor-pointer items-center justify-center px-3 py-2 text-lg font-medium bg-black-0 duration-300 hover:bg-opacity-0 text-white backdrop-blur-3xl">
                             Contacto
                         </span>
-                    </a>
+                    </a> */}
                 </div>
             </div>
         </div>

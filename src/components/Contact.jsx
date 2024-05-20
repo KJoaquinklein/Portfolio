@@ -10,8 +10,44 @@ const Contact = () => {
             <div className="pt-5 mv:w-screen sm:w-2/3 flex flex-col">
                 <h2 className="text-white-0 text-3xl mb-10 mv:pl-4 sm:pl-0">Contacto</h2>
                 <div className="flex justify-center">
-                    <div className="flex flex-wrap justify-center  text-white-0  mt-5  mb-40">
+                    <div className="flex flex-wrap justify-center text-white-0  mt-5  mb-40">
                         <a
+                            href="https://www.linkedin.com/in/joaqu%C3%ADn-klein-404b47304/"
+                            target="_blanck"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                        >
+                            <FaLinkedin className="text-[#0A66C2]" />
+                            <p className="ml-2">LinkedIn</p>
+                        </a>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5493533498996"
+                            target="_blanck"
+                            className=" mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                        >
+                            <FaWhatsappSquare className="text-[#25D366]" />
+                            <p className="ml-2">WhatsApp</p>
+                        </a>
+                        <a
+                            href="https://github.com/KJoaquinklein"
+                            target="_blanck"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                        >
+                            <FaGithubSquare className="text-white-0" />
+                            <p className="ml-2">GitHub</p>
+                        </a>
+                        <a
+                            href="src\components\CVJoaquinKlein.pdf"
+                            download="CV-Joaquin-Klein"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                        >
+                            <FaFileDownload className="text-[#F0DB4F]" />
+                            <p className="ml-2">Descargar CV</p>
+                        </a>
+                        <p className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl">
+                            <MdEmail className="text-red-400" />
+                            <p className="ml-2">joaquinfsd@hotmail.com</p>
+                        </p>
+                        {/* <a
                             href="https://www.linkedin.com/in/joaqu%C3%ADn-klein-404b47304/"
                             className="relative inline-flex overflow-hidden p-[2px] mx-4 mb-4 min-w-[232px]"
                         >
@@ -62,7 +98,7 @@ const Contact = () => {
                                 <MdEmail className="text-red-400" />
                                 <p className="ml-2">joaquinfsd@hotmail.com</p>
                             </span>
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
