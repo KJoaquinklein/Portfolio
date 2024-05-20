@@ -14,12 +14,12 @@ const Proyects = () => {
     };
 
     return (
-        <div id="proyect" className="bg-black-0 mv:pb-5 md:pb-40 max-w-screen font-port flex justify-center">
+        <div id="proyect" className="bg-black-0 mv:pb-5 md:pb-40 max-w-screen font-port flex justify-center ">
             <div className="pt-5 mv:w-screen sm:w-2/3 flex flex-col">
                 <h2 className="text-white-0 text-3xl mb-10 mv:pl-4 sm:pl-0">Proyectos</h2>
                 <div className="flex justify-center flex-wrap mv:space-y-6 xl:space-y-0">
                     {/* OPEN BOOK */}
-                    <div className="relative inline-flex overflow-hidden p-[2px] min-h-[402px] mv:min-w-[390px] sm:min-w-[426px] mx-5">
+                    <div className="relative inline-flex overflow-hidden p-[2px] min-h-[402px] mv:min-w-[386px] sm:min-w-[426px] mx-5">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#C1625E_0%,#008DA1_50%,#C1625E_100%)]" />
                         <span className="inline-flex min-h-[400px] min-w-[423px] items-center justify-center text-lg font-port font-medium bg-black-0 duration-300 text-white backdrop-blur-3xl">
                             <div className="text-white-0 min-h-[400px] min-w-[420px] flex flex-col items-center justify-between bg-black-0 px-4 pt-4 pb-3">
@@ -87,7 +87,7 @@ const Proyects = () => {
                     </div>
 
                     {/* COUNTRY APP */}
-                    <div className="relative inline-flex overflow-hidden p-[2px] min-h-[402px] mv:min-w-[390px] sm:min-w-[426px] mx-5">
+                    <div className="relative inline-flex overflow-hidden p-[2px] min-h-[402px] mv:min-w-[386px] sm:min-w-[426px] mx-5">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#C1625E_0%,#008DA1_50%,#C1625E_100%)]" />
                         <span className="inline-flex min-h-[400px] min-w-[423px] items-center justify-center text-lg font-port font-medium bg-black-0 duration-300 text-white backdrop-blur-3xl">
                             <div className="text-white-0 min-h-[400px] min-w-[420px] flex flex-col items-center justify-between bg-black-0 px-4 pt-4 pb-3">
