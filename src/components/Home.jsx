@@ -21,22 +21,22 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className="space-x-4">
+                <div className="mv:space-x-2 sm:space-x-4">
                     <a
                         href="#proyect"
-                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                        className="relative inline-flex min-h-[32px] min-w-[81px] text-lg px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
                     >
                         Proyectos
                     </a>
                     <a
                         href="#technologies"
-                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                        className="relative inline-flex min-h-[32px] min-w-[81px] text-lg px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
                     >
                         Tecnologías
                     </a>
                     <a
                         href="#contact"
-                        className="relative inline-flex min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
+                        className="relative inline-flex min-h-[32px] min-w-[81px] text-lg px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300"
                     >
                         Contacto
                     </a>

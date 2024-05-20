@@ -16,7 +16,7 @@ const Technologies = () => {
                 <h2 className="text-white-0 text-3xl mb-10 mv:pl-4 sm:pl-0">Tecnologías</h2>
                 <div className="flex justify-center">
                     <div className="flex flex-wrap text-white-0 justify-center mt-5">
-                        <div className="text-[#F16529] text-7xl flex items-center mv:w-56 md:w-72 mb-8">
+                        <div className="text-[#F16529] text-7xl flex items-center mv:w-56 md:w-72 mb-8 ">
                             <FaHtml5 />
                             <p className="text-white-0 text-xl ml-3">HTML</p>
                         </div>
@@ -28,7 +28,7 @@ const Technologies = () => {
                             <IoLogoJavascript />
                             <p className="text-white-0 text-xl ml-3">JavaScript</p>
                         </div>
-                        <div className="text-[#149ECA] text-7xl flex items-center mv:w-56 md:w-72 mb-8">
+                        <div className="text-[#149ECA] text-7xl flex items-center mv:w-56 md:w-72 mb-8 ">
                             <FaReact />
                             <p className="text-white-0 text-xl ml-3">React.js</p>
                         </div>

@@ -14,7 +14,7 @@ const Contact = () => {
                         <a
                             href="https://www.linkedin.com/in/joaqu%C3%ADn-klein-404b47304/"
                             target="_blanck"
-                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2   hover:text-orange-0 duration-300 text-2xl"
                         >
                             <FaLinkedin className="text-[#0A66C2]" />
                             <p className="ml-2">LinkedIn</p>
@@ -22,7 +22,7 @@ const Contact = () => {
                         <a
                             href="https://api.whatsapp.com/send?phone=5493533498996"
                             target="_blanck"
-                            className=" mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                            className=" mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2   hover:text-orange-0 duration-300 text-2xl"
                         >
                             <FaWhatsappSquare className="text-[#25D366]" />
                             <p className="ml-2">WhatsApp</p>
@@ -30,7 +30,7 @@ const Contact = () => {
                         <a
                             href="https://github.com/KJoaquinklein"
                             target="_blanck"
-                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2  hover:text-orange-0 duration-300 text-2xl"
                         >
                             <FaGithubSquare className="text-white-0" />
                             <p className="ml-2">GitHub</p>
@@ -38,12 +38,12 @@ const Contact = () => {
                         <a
                             href="src\components\CVJoaquinKlein.pdf"
                             download="CV-Joaquin-Klein"
-                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl"
+                            className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2  hover:text-orange-0 duration-300 text-2xl"
                         >
                             <FaFileDownload className="text-[#F0DB4F]" />
                             <p className="ml-2">Descargar CV</p>
                         </a>
-                        <p className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2 border-2 border-blue-0 hover:border-orange-0 duration-300 text-2xl">
+                        <p className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2  duration-300 text-2xl">
                             <MdEmail className="text-red-400" />
                             <p className="ml-2">joaquinfsd@hotmail.com</p>
                         </p>
