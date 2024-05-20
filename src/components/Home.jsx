@@ -1,5 +1,5 @@
 import { TypewriterEffect } from "./ui/typewriter-effect";
-import foto from "src/assets/IMG2.jpg";
+import foto from "../assets/IMG2.jpg";
 
 const Home = () => {
     const words = [{ text: "Joaquín" }, { text: "Klein" }];

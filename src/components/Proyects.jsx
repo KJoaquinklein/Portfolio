@@ -1,6 +1,6 @@
 import { useState } from "react";
-import openbook from "src/assets/OpenBook home.jpg";
-import country from "src/assets/Country home.jpg";
+import openbook from "../assets/OpenBook home.jpg";
+import country from "../assets/Country home.jpg";
 
 const Proyects = () => {
     const [showMorOpenBook, setShowMorOpenBook] = useState(false);
