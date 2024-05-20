@@ -9,7 +9,7 @@ const Contact = () => {
         <div id="contact" className="font-port bg-black-0 max-w-screen flex justify-center">
             <div className="pt-5 mv:w-screen sm:w-2/3 flex flex-col">
                 <h2 className="text-white-0 text-3xl mb-10 mv:pl-4 sm:pl-0">Contacto</h2>
-                <div className="flex justify-center">
+                <div className="flex justify-center mv:w-4/5 sm:w-full mv:m-auto sm:m-0">
                     <div className="flex flex-wrap justify-center text-white-0  mt-5  mb-40">
                         <a
                             href="https://www.linkedin.com/in/joaqu%C3%ADn-klein-404b47304/"
