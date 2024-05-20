@@ -1,4 +1,6 @@
 import { useState } from "react";
+import openbook from "src/assets/OpenBook home.jpg";
+import country from "src/assets/Country home.jpg";
 
 const Proyects = () => {
     const [showMorOpenBook, setShowMorOpenBook] = useState(false);
@@ -28,7 +30,7 @@ const Proyects = () => {
                                                 ? "mv:w-[345px] sm:w-96 h-36 object-cover object-top"
                                                 : "mv:w-[345px] sm:w-96 mv:h-48 sm:h-52"
                                         }
-                                        src="src/assets/OpenBook home.jpg"
+                                        src={openbook}
                                         alt="OpenBook"
                                     />
                                     <p className="mt-2 text-orange-0">OpenBook Library</p>
@@ -96,7 +98,7 @@ const Proyects = () => {
                                                 ? "mv:w-[345px] sm:w-96 h-36 object-cover object-top"
                                                 : "mv:w-[345px] sm:w-96 mv:h-48 sm:h-52"
                                         }
-                                        src="src\assets\Country home.jpg"
+                                        src={country}
                                         alt="OpenBook"
                                     />
                                     <p className="mt-2 text-orange-0">Country App</p>

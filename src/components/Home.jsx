@@ -1,4 +1,5 @@
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import foto from "src/assets/IMG2.jpg";
 
 const Home = () => {
     const words = [{ text: "Joaquín" }, { text: "Klein" }];
@@ -6,7 +7,7 @@ const Home = () => {
     return (
         <div className="bg-black-0 h-screen max-w-screen flex mv:items-center lg:items-start mv:flex-col lg:flex-row justify-center mv:pt-10 lg:pt-40">
             <div>
-                <img src="src/assets/IMG2.jpg" alt="Retrato de Joaquin Klein" className="w-96 h-96" />
+                <img src={foto} alt="Retrato de Joaquin Klein" className="w-96 h-96" />
             </div>
             <div className="text-white-0 font-port flex flex-col justify-between h-96 mv:w-96 lg:w-2/4 xl:w-1/3 mv:ml-0 lg:ml-7">
                 <div className="flex flex-col">
