@@ -3,6 +3,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
+import CV from "./components/CVJoaquinKlein.pdf";
 
 const Contact = () => {
     return (
@@ -36,7 +37,7 @@ const Contact = () => {
                             <p className="ml-2">GitHub</p>
                         </a>
                         <a
-                            href="src\components\CVJoaquinKlein.pdf"
+                            href={CV}
                             download="CV-Joaquin-Klein"
                             className="mx-5 mb-5 flex items-center min-h-[32px] min-w-[81px]  px-3 py-2  hover:text-orange-0 duration-300 text-2xl"
                         >
