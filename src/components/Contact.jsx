@@ -3,7 +3,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaGithubSquare } from "react-icons/fa";
 import { FaFileDownload } from "react-icons/fa";
-import CV from "./components/CVJoaquinKlein.pdf";
+import CV from "./CVJoaquinKlein.pdf";
 
 const Contact = () => {
     return (
