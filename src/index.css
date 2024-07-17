@@ -1,17 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:ital,wght@0,100..900;1,100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@100&family=Lexend+Deca:wght@100..900&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@keyframes coloranimation {
-    0% {
-        background-color: #d64a08;
-    }
-    50% {
-        background-color: #008da1;
-    }
-    100% {
-        background-color: #d64a08;
-    }
+.button {
+    @apply text-white-0 bg-black-0 py-2 px-4 mv:text-sm lg:text-xl hover:bg-purple-0 duration-200 md:mt-0 mv:mt-2;
+}
+
+.cardFront {
+    @apply flex items-center bg-purple-0 text-white-0 font-semibold p-3 ml-4 mt-4;
+}
+
+.cardBack {
+    @apply flex items-center bg-green-0 text-black-0 font-semibold p-3 ml-4 mt-4;
+}
+
+.cardActual {
+    @apply flex items-center bg-black-0 text-white-0 font-semibold p-3 ml-4 mt-4;
+}
+
+.contactCard {
+    @apply bg-black-0 flex text-white-0 items-center text-2xl p-2 mx-3 mt-3 hover:bg-purple-0 duration-200 w-60 flex justify-center;
 }

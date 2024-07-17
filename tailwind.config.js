@@ -2,31 +2,29 @@ export default {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
-            animation: {
-                coloranim: "coloranimation 2s infinite",
-            },
             colors: {
-                orange: {
-                    0: "#C1625E",
-                },
-                blue: {
-                    0: "#008DA1",
-                },
                 black: {
-                    0: "#050609",
+                    0: "#2C2F3A",
+                },
+                green: {
+                    0: "#7AE582",
+                },
+                purple: {
+                    0: "#5E548E",
                 },
                 white: {
-                    0: "#FEFEFF",
+                    0: "#DFF3E4",
                 },
             },
             fontFamily: {
-                port: ["Montserrat"],
+                tech: ["Share Tech Mono", "monospace"],
             },
         },
         screens: {
             mv: "100px",
             sm: "670px",
-            md: "768px",
+            md: "780px",
+            md2: "1000px",
             lg: "1024px",
             xl: "1280px",
             "2xl": "1536px",
