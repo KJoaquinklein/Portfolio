@@ -71,7 +71,7 @@ function App() {
     return (
         <div className="overflow-hidden">
             {/* HOME **************************************************************************** */}
-            <div className="bg-black-0 h-screen max-w-screen flex flex-col items-center justify-between">
+            <div className="bg-black-0 max-h-screen max-w-screen flex flex-col items-center justify-between">
                 <div
                     className="bg-green-0 flex mv:flex-col md:flex-row mv:h-[600px] md:w-[650px] lg:w-[850px] mv:w-[300px] md:h-[300px] lg:h-[400px] p-10 font-mono mv:mt-28 md:mt-40"
                     data-aos="fade-down"
