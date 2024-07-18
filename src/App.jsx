@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import CV from "./assets/Curriculum vitae - Joaquín Klein.pdf";
 
 //! Fotos:
-import foto from "./assets/foto transparente.png";
+import foto from "./assets/foto.jpg";
 
 //! Icons:
 import { FaArrowDown } from "react-icons/fa";
