@@ -108,7 +108,7 @@ function App() {
                 </div>
                 <a
                     href="#aboutMe"
-                    className="mv:p-6 md:p-4 xl:p-6 bg-white-0 rounded-full shadow-xl mb-14 animate-bounce"
+                    className="mv:p-6 md:p-4 xl:p-6 bg-white-0 rounded-full shadow-xl mv:mb-3 mv:mt-7 lg:mt-0 lg:mb-14 animate-bounce"
                 >
                     <FaArrowDown className="text-xl" />
                 </a>
