@@ -371,7 +371,7 @@ function App() {
                         className={
                             showMoreCA
                                 ? "bg-black-0 p-4 flex flex-col mt-4 max-w-[1160px]"
-                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px]"
+                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px] pb-7"
                         }
                     >
                         <img
