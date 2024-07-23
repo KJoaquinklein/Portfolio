@@ -402,7 +402,7 @@ function App() {
                                 </p>
                             </div>
                             <div className="flex justify-between">
-                                <div className="flex text-2xl space-x-2">
+                                <div className="flex text-2xl space-x-2 flex-wrap">
                                     <BiLogoJavascript className="text-purple-0" />
                                     <FaReact className="text-purple-0" />
                                     <SiRedux className="text-purple-0" />
