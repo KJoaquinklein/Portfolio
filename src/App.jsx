@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import CV from "./assets/Curriculum vitae - Joaquín Klein.pdf";
 
 //! Fotos:
-import foto from "./assets/foto.jpg";
+import foto from "./assets/foto2.jpg";
 
 //! Icons:
 import { FaArrowDown } from "react-icons/fa";
@@ -71,7 +71,7 @@ function App() {
     return (
         <div className="overflow-hidden">
             {/* HOME **************************************************************************** */}
-            <div className="bg-black-0 h-screen max-w-screen flex flex-col items-center justify-between ">
+            <div className="bg-black-0 min-h-screen max-w-screen flex flex-col items-center justify-between ">
                 <div
                     className="bg-green-0 flex mv:flex-col md:flex-row mv:h-[600px] md:w-[650px] lg:w-[850px] mv:w-[300px] md:h-[300px] lg:h-[400px] p-10 font-mono mv:mt-28 md:mt-40"
                     data-aos="fade-down"
@@ -81,7 +81,7 @@ function App() {
                         <img
                             src={foto}
                             alt="Foto de Joaquin Klein"
-                            className="md:max-w-56 lg:max-w-80 md:max-h-56  lg:max-h-80"
+                            className="md:max-w-56 lg:max-w-80 md:max-h-56 lg:max-h-80 rounded-t-full"
                         />
                     </div>
                     <div className="flex flex-col justify-between mv:items-center md:items-start mv:mt-2 mv:ml-0 md:mt-0 md:ml-10">
@@ -93,7 +93,7 @@ function App() {
                             </p>
                         </div>
 
-                        <div className="flex mv:flex-col md:flex-row justify-between w-full text-center">
+                        <div className="flex mv:mb-5 sm:mb-0 mv:flex-col md:flex-row justify-between w-full text-center">
                             <a href="#aboutMe" className="button">
                                 Sobre mí
                             </a>
@@ -258,10 +258,9 @@ function App() {
                                         </div>
                                     </div>
                                     <p className="mv:text-xs sm:text-sm md:text-md">
-                                        Aplicación que funciona como cancionero personal. Consta de tres secciones, una
-                                        donde el usuario puede ver las canciones registradas, otra donde le permite
-                                        cargar una nueva canción, y por ultimo donde puede ver la letra y reproducirla
-                                        para ensayar.
+                                        Cancionero personal que consta de tres secciones, una donde el usuario puede ver
+                                        las canciones registradas, otra donde le permite cargar una nueva canción, y por
+                                        ultimo donde puede reproducir la letra para ensayar.
                                     </p>
                                 </div>
                                 <div className="flex justify-between">
