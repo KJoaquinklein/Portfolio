@@ -225,7 +225,7 @@ function App() {
                         className={
                             showMoreMC
                                 ? "bg-black-0 p-4 flex flex-col max-w-[1160px]"
-                                : "bg-black-0 p-4 flex mv:items-start md:items-center max-w-[1160px] mv:h-[210px] md:h-auto"
+                                : "bg-black-0 p-4 flex items-center max-w-[1160px]"
                         }
                     >
                         <img
@@ -263,8 +263,8 @@ function App() {
                                         ultimo donde puede reproducir la letra para ensayar.
                                     </p>
                                 </div>
-                                <div className="flex mv:justify-end md:justify-between">
-                                    <div className=" mv:hidden md:flex text-2xl space-x-2">
+                                <div className="flex justify-between">
+                                    <div className="flex text-2xl space-x-2">
                                         <BiLogoTypescript className="text-purple-0" />
                                         <FaReact className="text-purple-0" />
                                         <SiRedux className="text-purple-0" />
@@ -298,7 +298,7 @@ function App() {
                         className={
                             showMoreOB
                                 ? "bg-black-0 p-4 flex flex-col mt-4 max-w-[1160px]"
-                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px] mv:max-h-[210px] md:h-auto"
+                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px]"
                         }
                     >
                         <img
@@ -334,8 +334,8 @@ function App() {
                                     parte del Backend en la implementacion de un chat en vivo.
                                 </p>
                             </div>
-                            <div className="flex mv:justify-end md:justify-between">
-                                <div className=" mv:hidden md:flex flex-wrap text-2xl space-x-2 ">
+                            <div className="flex justify-between">
+                                <div className="flex flex-wrap text-2xl space-x-2">
                                     <BiLogoJavascript className="text-purple-0" />
                                     <FaReact className="text-purple-0" />
                                     <SiRedux className="text-purple-0" />
@@ -371,7 +371,7 @@ function App() {
                         className={
                             showMoreCA
                                 ? "bg-black-0 p-4 flex flex-col mt-4 max-w-[1160p[x]"
-                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px] mv:h-[210px] md:h-auto"
+                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px]"
                         }
                     >
                         <img
@@ -401,8 +401,8 @@ function App() {
                                     filtrar, ordenar los paises o buscarlo por su nombre.
                                 </p>
                             </div>
-                            <div className="flex mv:justify-end md:justify-between">
-                                <div className=" text-2xl space-x-2 flex-wrap mv:hidden md:flex">
+                            <div className="flex justify-between">
+                                <div className="flex text-2xl space-x-2 flex-wrap">
                                     <BiLogoJavascript className="text-purple-0" />
                                     <FaReact className="text-purple-0" />
                                     <SiRedux className="text-purple-0" />
