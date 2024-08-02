@@ -6,6 +6,15 @@ import CV from "./assets/Curriculum vitae - Joaquín Klein.pdf";
 //! Fotos:
 import foto from "./assets/foto2.jpg";
 
+//! Proyectos:
+import MCHome from "./assets/MCHome.jpeg";
+import MC2 from "./assets/MC2.jfif";
+import MC3 from "./assets/MC3.jfif";
+import OBHome from "./assets/OBHome.jfif";
+import OB2 from "./assets/OB2.jfif";
+import OB3 from "./assets/OB3.jfif";
+import CAHome from "./assets/CAHome.jfif";
+
 //! Icons:
 import { FaArrowDown } from "react-icons/fa";
 import { FaRocket } from "react-icons/fa6"; //<FaRocket />
@@ -229,7 +238,7 @@ function App() {
                         }
                     >
                         <img
-                            src="https://media.licdn.com/dms/image/D4D2DAQEz3rwnbWw5og/profile-treasury-image-shrink_800_800/0/1719334310715?e=1722438000&v=beta&t=xbdzvPGMkEqj0Pbm4YpR67f6sbwt4G7PA8hUfAwTH8c"
+                            src={MCHome}
                             alt="Mi cancionero Home"
                             className={showMoreMC ? "hidden" : "md2:flex mv:hidden h-[160px] w-[305px]"}
                         />
@@ -278,18 +287,9 @@ function App() {
                             </div>
                         </div>
                         <div className={showMoreMC ? "flex overflow-auto justify-between mt-4" : "hidden"}>
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQEz3rwnbWw5og/profile-treasury-image-shrink_800_800/0/1719334310715?e=1722438000&v=beta&t=xbdzvPGMkEqj0Pbm4YpR67f6sbwt4G7PA8hUfAwTH8c"
-                                className="h-36 mr-2"
-                            />
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQEM2zpjLgyJTA/profile-treasury-image-shrink_800_800/0/1719334340431?e=1722438000&v=beta&t=h8fNdMvvebhG_0tOi4GUQChUWy9J-57UX__C0BbhdaI"
-                                className="h-36 mr-2"
-                            />
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQFPYcD13HIatA/profile-treasury-image-shrink_800_800/0/1719334372818?e=1722438000&v=beta&t=kd9FRH-VOJokFvLdFufuyhk12sQVfWa_0xn3XAVVmlc"
-                                className="h-36 mr-2"
-                            />
+                            <img src={MCHome} className="h-36 mr-2" />
+                            <img src={MC2} className="h-36 mr-2" />
+                            <img src={MC3} className="h-36 mr-2" />
                         </div>
                     </div>
 
@@ -302,7 +302,7 @@ function App() {
                         }
                     >
                         <img
-                            src="https://media.licdn.com/dms/image/D4D2DAQGAIFQ8_R1BHg/profile-treasury-image-shrink_800_800/0/1715708042946?e=1722438000&v=beta&t=_meYjf2La9yImf9_HsYLBRR_k1iv4a2UYiZxNHNRUgI"
+                            src={OBHome}
                             alt="OpenBook Home"
                             className={showMoreOB ? "hidden" : "md2:flex mv:hidden h-[160px] w-[305px]"}
                         />
@@ -351,18 +351,9 @@ function App() {
                             </div>
                         </div>
                         <div className={showMoreOB ? "flex overflow-auto  justify-between mt-4" : "hidden"}>
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQGAIFQ8_R1BHg/profile-treasury-image-shrink_800_800/0/1715708042946?e=1722438000&v=beta&t=_meYjf2La9yImf9_HsYLBRR_k1iv4a2UYiZxNHNRUgI"
-                                className="h-36 mr-2"
-                            />
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQH23scvA-fYpQ/profile-treasury-image-shrink_800_800/0/1715708069730?e=1722438000&v=beta&t=oUn_DgeeTtJKDtFj9rR0_6hQZP3B7af5Trm6QdhRSB0"
-                                className="h-36 mr-2"
-                            />
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQGx_I67F4dhVA/profile-treasury-image-shrink_800_800/0/1715708090090?e=1722438000&v=beta&t=M_aQvB5ZnJnN6mEs4IDFEuDOY3xicp1UH3VkNmGvyOM"
-                                className="h-36 mr-2"
-                            />
+                            <img src={OBHome} className="h-36 mr-2" />
+                            <img src={OB2} className="h-36 mr-2" />
+                            <img src={OB3} className="h-36 mr-2" />
                         </div>
                     </div>
 
@@ -375,7 +366,7 @@ function App() {
                         }
                     >
                         <img
-                            src="https://media.licdn.com/dms/image/D4D2DAQFuIzMbmLYvoQ/profile-treasury-image-shrink_800_800/0/1715705888959?e=1722438000&v=beta&t=WaxrLPiOwE25j1JjKl-VqSMTHkJla_2dmt25U5CpPRY"
+                            src={CAHome}
                             alt="Country app Home"
                             className={showMoreCA ? "hidden" : "md2:flex mv:hidden h-[160px] w-[305px]"}
                         />
@@ -417,10 +408,7 @@ function App() {
                             </div>
                         </div>
                         <div className={showMoreCA ? "flex justify-between mt-4" : "hidden"}>
-                            <img
-                                src="https://media.licdn.com/dms/image/D4D2DAQFuIzMbmLYvoQ/profile-treasury-image-shrink_800_800/0/1715705888959?e=1722438000&v=beta&t=WaxrLPiOwE25j1JjKl-VqSMTHkJla_2dmt25U5CpPRY"
-                                className="h-36"
-                            />
+                            <img src={CAHome} className="h-36" />
                         </div>
                     </div>
                 </div>
