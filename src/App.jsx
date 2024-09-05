@@ -14,6 +14,11 @@ import OBHome from "./assets/OBHome.jfif";
 import OB2 from "./assets/OB2.jfif";
 import OB3 from "./assets/OB3.jfif";
 import CAHome from "./assets/CAHome.jfif";
+import CA2 from "./assets/CA2.jpg";
+import CA3 from "./assets/CA3.jpg";
+import EBDHHome from "./assets/EBDHHome.jpg";
+import EBDH2 from "./assets/EBDH2.jpg";
+import EBDH3 from "./assets/EBDH3.jpg";
 
 //! Icons:
 import { FaArrowDown } from "react-icons/fa";
@@ -25,6 +30,7 @@ import { FaFileDownload } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FiCheck } from "react-icons/fi";
 import { FaCopy } from "react-icons/fa";
+import { SiAstro } from "react-icons/si";
 
 //todo FRONT
 import { BiLogoJavascript } from "react-icons/bi"; //<BiLogoJavascript />
@@ -60,6 +66,11 @@ function App() {
     const [showMoreCA, setShowMoreCA] = useState(false);
     const handleCA = () => {
         setShowMoreCA(!showMoreCA);
+    };
+
+    const [showMoreEBDH, setShowMoresEBDH] = useState(false);
+    const handleEBDH = () => {
+        setShowMoresEBDH(!showMoreEBDH);
     };
 
     //*---- funcion para copiar email -----
@@ -174,6 +185,10 @@ function App() {
                             <div className="cardFront">
                                 <p className="mv:hidden sm:flex sm:text-md md:text-xl">Redux</p>
                                 <SiRedux className="sm:text-2xl md:text-4xl mv:ml-0 sm:ml-2" />
+                            </div>
+                            <div className="cardFront">
+                                <p className="mv:hidden sm:flex sm:text-md md:text-xl">Astro</p>
+                                <SiAstro className="sm:text-2xl md:text-4xl mv:ml-0 sm:ml-2" />
                             </div>
                         </div>
                     </div>
@@ -407,8 +422,68 @@ function App() {
                                 </button>
                             </div>
                         </div>
-                        <div className={showMoreCA ? "flex justify-between mt-4" : "hidden"}>
-                            <img src={CAHome} className="h-36" />
+                        <div className={showMoreCA ? "flex overflow-auto  justify-between mt-4" : "hidden"}>
+                            <img src={CAHome} className="h-36 mr-2" />
+                            <img src={CA2} className="h-36 mr-2" />
+                            <img src={CA3} className="h-36 mr-2" />
+                        </div>
+                    </div>
+
+                    {/* EL BIGOTE DE HORACIO */}
+                    <div
+                        className={
+                            showMoreEBDH
+                                ? "bg-black-0 p-4 flex flex-col mt-4 max-w-[1160p[x]"
+                                : "bg-black-0 p-4 flex mt-4 max-w-[1160px]"
+                        }
+                    >
+                        <img
+                            src={EBDHHome}
+                            alt="Country app Home"
+                            className={showMoreEBDH ? "hidden" : "md2:flex mv:hidden h-[160px] w-[305px]"}
+                        />
+                        <div className="ml-3  h-[160px] flex flex-col justify-between">
+                            <div>
+                                <div className="flex  justify-between">
+                                    <h3 className="font-semibold  mv:text-lg sm:text-xl md:text-2xl mb-1">
+                                        El Bigote De Horacio
+                                    </h3>
+                                    <div className="flex text-2xl text-green-0">
+                                        <a
+                                            href="https://elbigotedehoracio-page.vercel.app/"
+                                            className="hover:text-purple-0 duration-100"
+                                            target="_blanck"
+                                        >
+                                            <FaRocket className="mr-5" />
+                                        </a>
+                                        <a
+                                            href="https://github.com/KJoaquinklein/ElBigoteDeHoracioPage"
+                                            className="hover:text-purple-0 duration-100"
+                                            target="_blanck"
+                                        >
+                                            <FaGithub />
+                                        </a>
+                                    </div>
+                                </div>
+                                <p className="mv:text-xs sm:text-sm md:text-md">
+                                    Landing page para una banda llamada "El Bigote De Horacio", donde podrás encontrar
+                                    la discografía de la banda, biografía y métodos de contacto.
+                                </p>
+                            </div>
+                            <div className="flex justify-between">
+                                <div className="flex text-2xl space-x-2 flex-wrap">
+                                    <SiAstro className="text-purple-0" />
+                                    <RiTailwindCssFill className="text-purple-0" />
+                                </div>
+                                <button className="text-green-0 hover:underline" onClick={handleEBDH}>
+                                    {showMoreEBDH ? <>Ver menos</> : <>Ver más</>}
+                                </button>
+                            </div>
+                        </div>
+                        <div className={showMoreEBDH ? "flex overflow-auto  justify-between mt-4" : "hidden"}>
+                            <img src={EBDHHome} className="h-36 mr-2" />
+                            <img src={EBDH2} className="h-36 mr-2" />
+                            <img src={EBDH3} className="h-36 mr-2" />
                         </div>
                     </div>
                 </div>
