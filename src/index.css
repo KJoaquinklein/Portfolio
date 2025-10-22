@@ -23,3 +23,8 @@
 .contactCard {
     @apply bg-black-0 flex text-white-0 items-center text-2xl p-2 mx-3 mt-3 hover:bg-purple-0 duration-200 w-60 flex justify-center;
 }
+
+.scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
