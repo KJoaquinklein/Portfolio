@@ -60,24 +60,9 @@ import { SiSocketdotio } from "react-icons/si"; //<SiSocketdotio />
 import { FaAngular } from "react-icons/fa"; //<FaAngular />
 
 function App() {
-    const [showMoreS, setShowMoreS] = useState(false);
-    const handleS = () => {
-        setShowMoreS(!showMoreS);
-    };
-
-    const [showMoreD, setShowMoreD] = useState(false);
-    const handleD = () => {
-        setShowMoreD(!showMoreD);
-    };
-
-    const [showMoreOB, setShowMoreOB] = useState(false);
-    const handleOB = () => {
-        setShowMoreOB(!showMoreOB);
-    };
-
-    const [showMoreEBDH, setShowMoresEBDH] = useState(false);
-    const handleEBDH = () => {
-        setShowMoresEBDH(!showMoreEBDH);
+    const [C, SC] = useState("");
+    const handleC = (T) => {
+        SC(T);
     };
 
     //*---- funcion para copiar email -----
@@ -231,7 +216,7 @@ function App() {
                                     <BiLogoPostgresql className="text-green-0" />
                                     <SiSqlite className="text-green-0" />
                                 </div>
-                                <button className="text-green-0 hover:underline w-20" onClick={handleS}>
+                                <button className="text-green-0 hover:underline w-20" onClick={() => handleC("S")}>
                                     Ver más
                                 </button>
                             </div>
@@ -259,7 +244,7 @@ function App() {
                                     <SiAstro className="text-green-0" />
                                     <FaCss3Alt className="text-green-0" />
                                 </div>
-                                <button className="text-green-0 hover:underline w-20" onClick={handleD}>
+                                <button className="text-green-0 hover:underline w-20" onClick={() => handleC("D")}>
                                     Ver más
                                 </button>
                             </div>
@@ -301,7 +286,7 @@ function App() {
                                     <BiLogoPostgresql className="text-green-0" />
                                     <SiSocketdotio className="text-green-0" />
                                 </div>
-                                <button className="text-green-0 hover:underline w-20" onClick={handleOB}>
+                                <button className="text-green-0 hover:underline w-20" onClick={() => handleC("OB")}>
                                     Ver más
                                 </button>
                             </div>
@@ -344,7 +329,7 @@ function App() {
                                     <SiAstro className="text-green-0" />
                                     <RiTailwindCssFill className="text-green-0" />
                                 </div>
-                                <button className="text-green-0 hover:underline" onClick={handleEBDH}>
+                                <button className="text-green-0 hover:underline" onClick={() => handleC("EBDH")}>
                                     Ver más
                                 </button>
                             </div>
@@ -353,10 +338,7 @@ function App() {
                 </div>
             </div>
 
-            {showMoreOB && <Carrucel setClose={setShowMoreOB} proyecto="OB" />}
-            {showMoreEBDH && <Carrucel setClose={setShowMoresEBDH} proyecto="EBDH" />}
-            {showMoreD && <Carrucel setClose={setShowMoreD} proyecto="D" />}
-            {showMoreS && <Carrucel setClose={setShowMoreS} proyecto="S" />}
+            <Carrucel setClose={SC} proyecto={C} />
 
             {/* CONTACT ******************************************************************************* */}
             <div
@@ -405,48 +387,49 @@ export default App;
 
 const Carrucel = ({ proyecto, setClose }) => {
     return (
-        <div className="w-screen h-screen fixed top-0 bottom-0 left-0 flex flex-col justify-center z-50 bg-[#000]/85 font-mono">
+        <div
+            className={
+                proyecto
+                    ? "w-screen h-screen fixed top-0 bottom-0 left-0 flex flex-col justify-center z-50 bg-[#000]/85 font-mono"
+                    : "hidden"
+            }
+        >
             <div className="flex justify-end pt-10 pr-10 text-green-0 hover:underline text-2xl">
-                <button onClick={() => setClose(false)}>Cerrar</button>
+                <button onClick={() => setClose("")}>Cerrar</button>
             </div>
             <div className="w-[95vw] lg:w-[50vw] mx-auto">
-                {proyecto === "OB" ? (
-                    <div className="space-y-5 h-[100vh] overflow-auto py-28 scrollbar">
-                        <img src={OBHome} />
+                <div className={proyecto === "OB" ? "space-y-5 h-[100vh] overflow-auto py-28 scrollbar" : "hidden"}>
+                    <img src={OBHome} />
 
-                        <img src={OB2} />
+                    <img src={OB2} />
 
-                        <img src={OB3} />
-                    </div>
-                ) : proyecto === "EBDH" ? (
-                    <div className="space-y-5 h-[100vh] overflow-auto py-28 scrollbar">
-                        <img src={EBDHHome} />
+                    <img src={OB3} />
+                </div>
+                <div className={proyecto === "EBDH" ? "space-y-5 h-[100vh] overflow-auto py-28 scrollbar" : "hidden"}>
+                    <img src={EBDHHome} />
 
-                        <img src={EBDH2} />
+                    <img src={EBDH2} />
 
-                        <img src={EBDH3} />
-                    </div>
-                ) : proyecto === "D" ? (
-                    <div className="space-y-5 h-[100vh] overflow-auto py-28 scrollbar">
-                        <img src={D1} />
+                    <img src={EBDH3} />
+                </div>
+                <div className={proyecto === "D" ? "space-y-5 h-[100vh] overflow-auto py-28 scrollbar" : "hidden"}>
+                    <img src={D1} />
 
-                        <img src={D2} />
+                    <img src={D2} />
 
-                        <img src={D3} />
-                    </div>
-                ) : proyecto === "S" ? (
-                    <div className="space-y-5 h-[100vh] overflow-auto py-28 scrollbar">
-                        <img src={S1} />
+                    <img src={D3} />
+                </div>
+                <div className={proyecto === "S" ? "space-y-5 h-[100vh] overflow-auto py-28 scrollbar" : "hidden"}>
+                    <img src={S1} />
 
-                        <img src={S2} />
+                    <img src={S2} />
 
-                        <img src={S3} />
+                    <img src={S3} />
 
-                        <img src={S4} />
+                    <img src={S4} />
 
-                        <img src={S5} />
-                    </div>
-                ) : null}
+                    <img src={S5} />
+                </div>
             </div>
         </div>
     );
