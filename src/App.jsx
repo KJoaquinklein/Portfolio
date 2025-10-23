@@ -88,10 +88,10 @@ function App() {
                 className="bg-white-0 max-w-screen text-black-0 font-mono pt-10 pb-5 mv:px-4 sm:px-10 xl:px-60"
             >
                 <h2 className="font-semibold text-4xl" data-aos="fade-right">
-                    Hola! mi nombre es Joaquín Klein 👋🏼
+                    Hola! Mi nombre es Joaquín Klein 👋🏼
                 </h2>
                 <p className="mv:ml-5 sm:ml-20 mt-5 mv:text-sm sm:text-xl md:text-2xl" data-aos="fade-right">
-                    Soy desarrollador frontend y de sistemas de gestión. Comencé mis estudios en tecnóloga como
+                    Soy desarrollador frontend y de sistemas de gestión. Comencé mis estudios en tecnología como
                     autodidacta, aprendiendo las bases del desarrollo web, conocimientos que amplié en mi paso por
                     distintos cursos. Actualmente me encuentro desarrollando distintos sistemas de gestión para
                     comercios locales y pequeñas empresas.
